@@ -65,6 +65,7 @@ var config = {
     // name: email
     fengmk2: 'fengmk2@gmail.com',
     admin: 'admin@cnpmjs.org',
+    cloud: 'nopains@126.com',
     dead_horse: 'dead_horse@qq.com',
   },
 
@@ -98,13 +99,14 @@ var config = {
    */
 
   database: {
-    db: 'cnpmjs_test',
+    db: 'cnpmjs',
     username: 'root',
-    password: '',
+    password: '123456',
 
     // the sql dialect of the database
     // - currently supported: 'mysql', 'sqlite', 'postgres', 'mariadb'
-    dialect: 'sqlite',
+    //dialect: 'sqlite',
+    dialect: 'mysql',
 
     // custom host; default: 127.0.0.1
     host: '127.0.0.1',
@@ -135,7 +137,8 @@ var config = {
   downloadRedirectToNFS: false,
 
   // registry url name
-  registryHost: 'r.cnpmjs.org',
+  // registryHost: 'r.cnpmjs.org',
+  registryHost: 'localhost:7001',
 
   /**
    * registry mode config
@@ -147,7 +150,7 @@ var config = {
   enablePrivate: false,
 
   // registry scopes, if don't set, means do not support scopes
-  scopes: [ '@cnpm', '@cnpmtest', '@cnpm-test' ],
+  scopes: [ '@icenter', '@cnpm', '@cnpmtest', '@cnpm-test' ],
 
   // some registry already have some private packages in global scope
   // but we want to treat them as scoped private packages,
@@ -168,11 +171,12 @@ var config = {
   // sync source, upstream registry
   // If you want to directly sync from official npm's registry
   // please drop them an email first
-  sourceNpmRegistry: 'https://registry.npm.taobao.org',
+  // sourceNpmRegistry: 'https://registry.npm.taobao.org',
+  sourceNpmRegistry: 'http://localhost:7001',
 
   // upstream registry is base on cnpm/cnpmjs.org or not
   // if your upstream is official npm registry, please turn it off
-  sourceNpmRegistryIsCNpm: true,
+  sourceNpmRegistryIsCNpm: false,
 
   // if install return 404, try to sync from source registry
   syncByInstall: true,
