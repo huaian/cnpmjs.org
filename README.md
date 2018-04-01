@@ -186,3 +186,11 @@ Tips: make sure your code is following the [node-style-guide](https://github.com
  npm run start
  关闭服务器
  npm run stop
+
+
+ 客户端使用方式:
+ cnpm config get registry 查看当前的注册表地址
+ cnpm set registry http://localhost:70
+ cnpm login
+https://github.com/cnpm启动redis/cnpmjs.org/wiki/Deploy-a-private-npm-registry-in-5-minutes 
+
