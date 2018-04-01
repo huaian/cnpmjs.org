@@ -175,3 +175,14 @@ Tips: make sure your code is following the [node-style-guide](https://github.com
 ## License
 
 [MIT](LICENSE.txt)
+
+
+启动msyql
+ mysql
+
+ 启动测试服务器
+ npm run start 
+ 启动服务器
+ npm run start
+ 关闭服务器
+ npm run stop
